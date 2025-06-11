@@ -1,5 +1,6 @@
 import streamlit as st
 from pypdf import PdfWriter, PdfReader
+from io import BytesIO
 
 st.set_page_config(page_title="MergeOnFleek", page_icon="🦄")
 st.title("🦄 MergeOnFleek")
@@ -34,18 +35,23 @@ if uploaded_files:
         writer = PdfWriter()
         for uploaded in uploaded_files:
             reader = PdfReader(uploaded)
+            if reader.is_encrypted:
+                try:
+                    reader.decrypt("")
+                except Exception:
+                    st.error(f"File '{uploaded.name}' is encrypted and cannot be processed.")
+                    continue
             for page in reader.pages:
                 writer.add_page(page)
-        output_pdf = "merged_onfleek.pdf"
-        with open(output_pdf, "wb") as fout:
-            writer.write(fout)
-        with open(output_pdf, "rb") as fout:
-            st.success("Done! Download your flawless PDF below.")
-            st.download_button(
-                label="Download Merged PDF",
-                data=fout,
-                file_name="merged_onfleek.pdf",
-                mime="application/pdf"
-            )
+        output_pdf = BytesIO()
+        writer.write(output_pdf)
+        output_pdf.seek(0)
+        st.success("Done! Download your flawless PDF below.")
+        st.download_button(
+            label="Download Merged PDF",
+            data=output_pdf,
+            file_name="merged_onfleek.pdf",
+            mime="application/pdf"
+        )
 else:
     st.info("Upload two or more PDFs to get started!")

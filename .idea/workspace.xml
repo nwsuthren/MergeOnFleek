@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dc4a2a3-60a3-48a3-9095-32bf84872819" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/MergeOnFleek.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MergeOnFleek.iml" afterDir="false" />
+    <list default="true" id="3dc4a2a3-60a3-48a3-9095-32bf84872819" name="Changes" comment="main program update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mergeonfleek.py" beforeDir="false" afterPath="$PROJECT_DIR$/mergeonfleek.py" afterDir="false" />
     </list>
@@ -24,21 +23,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "nwsuthren"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nwsuthren&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/nwsuthren/MergeOnFleek.git",
-    "accountId": "4a49364e-3db5-40c8-b484-9fa8cb45bae7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nwsuthren/MergeOnFleek.git&quot;,
+    &quot;accountId&quot;: &quot;4a49364e-3db5-40c8-b484-9fa8cb45bae7&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2y2L9aUHBYmDVllZh04e5XIxImz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,6 +48,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.mergeonfleek.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master"
   }
 }]]></component>
@@ -67,6 +67,30 @@
       <option name="presentableId" value="Default" />
       <updated>1749027570576</updated>
     </task>
+    <task id="LOCAL-00001" summary="main program update">
+      <option name="closed" value="true" />
+      <created>1749030046763</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749030046763</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="main program update" />
+    <option name="LAST_COMMIT_MESSAGE" value="main program update" />
   </component>
 </project>
